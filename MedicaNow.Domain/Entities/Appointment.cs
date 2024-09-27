@@ -1,4 +1,5 @@
 ﻿using FKA.Domain.Entities;
+using MedicaNow.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace MedicaNow.Domain.Entities
         public Guid PatientId { get; set; }  
         public Guid DoctorId { get; set; }  
         public DateTime AppointmentDate { get; set; }  
-        public string Status { get; set; } 
+        public EnumStatus Status { get; set; } 
         public string Reason { get; set; } 
         public string Notes { get; set; }  
 
